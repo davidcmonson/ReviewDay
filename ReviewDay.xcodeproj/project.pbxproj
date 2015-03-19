@@ -19,6 +19,8 @@
 		772F46991ABB2A5800980812 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 772F46981ABB2A5800980812 /* Question.m */; };
 		772F469C1ABB2A5900980812 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 772F469B1ABB2A5900980812 /* User.m */; };
 		772F469F1ABB2ACB00980812 /* QuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772F469E1ABB2ACB00980812 /* QuestionController.m */; };
+		772F46A21ABB2D6500980812 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 772F46A11ABB2D6500980812 /* Stack.m */; };
+		772F46A41ABB2D7100980812 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772F46A31ABB2D7100980812 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		772F469B1ABB2A5900980812 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		772F469D1ABB2ACB00980812 /* QuestionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionController.h; path = ../QuestionController.h; sourceTree = "<group>"; };
 		772F469E1ABB2ACB00980812 /* QuestionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionController.m; path = ../QuestionController.m; sourceTree = "<group>"; };
+		772F46A01ABB2D6500980812 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		772F46A11ABB2D6500980812 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		772F46A31ABB2D7100980812 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772F46A41ABB2D7100980812 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,7 @@
 		772F465F1ABB22E100980812 = {
 			isa = PBXGroup;
 			children = (
+				772F46A31ABB2D7100980812 /* CoreData.framework */,
 				772F466A1ABB22E100980812 /* ReviewDay */,
 				772F46841ABB22E100980812 /* ReviewDayTests */,
 				772F46691ABB22E100980812 /* Products */,
@@ -108,6 +115,8 @@
 				772F46981ABB2A5800980812 /* Question.m */,
 				772F469A1ABB2A5900980812 /* User.h */,
 				772F469B1ABB2A5900980812 /* User.m */,
+				772F46A01ABB2D6500980812 /* Stack.h */,
+				772F46A11ABB2D6500980812 /* Stack.m */,
 				772F46941ABB28B000980812 /* Model.xcdatamodeld */,
 				772F46781ABB22E100980812 /* Images.xcassets */,
 				772F467A1ABB22E100980812 /* LaunchScreen.xib */,
@@ -242,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772F46A21ABB2D6500980812 /* Stack.m in Sources */,
 				772F46741ABB22E100980812 /* QuestionListViewController.m in Sources */,
 				772F469C1ABB2A5900980812 /* User.m in Sources */,
 				772F46711ABB22E100980812 /* AppDelegate.m in Sources */,
