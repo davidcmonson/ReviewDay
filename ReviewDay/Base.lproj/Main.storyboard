@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="B8N-gg-hSJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Question List View Controller-->
@@ -51,11 +52,68 @@
                             <constraint firstAttribute="bottom" secondItem="AuI-Ar-sAE" secondAttribute="bottom" id="srJ-Hz-Z3G"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="k39-kn-m95"/>
+                    <navigationItem key="navigationItem" id="k39-kn-m95">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Xhs-Ps-ihR">
+                            <connections>
+                                <segue destination="iKY-Di-vyi" kind="show" id="qez-uL-vUw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1904" y="317"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="CD4-9U-DzA">
+            <objects>
+                <viewController id="iKY-Di-vyi" customClass="QuestionDetailViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Y9-2q-GRj"/>
+                        <viewControllerLayoutGuide type="bottom" id="UlU-UD-lIM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sc2-Lt-hfC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Question Details" translatesAutoresizingMaskIntoConstraints="NO" id="RqR-TN-VlN">
+                                <rect key="frame" x="16" y="161" width="568" height="419"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Question Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OnV-Dq-8HX">
+                                <rect key="frame" x="16" y="104" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RqR-TN-VlN" secondAttribute="bottom" constant="20" symbolic="YES" id="ABZ-eB-nFo"/>
+                            <constraint firstItem="OnV-Dq-8HX" firstAttribute="leading" secondItem="RqR-TN-VlN" secondAttribute="leading" id="Bn2-Jd-HUM"/>
+                            <constraint firstItem="OnV-Dq-8HX" firstAttribute="trailing" secondItem="RqR-TN-VlN" secondAttribute="trailing" id="Lrc-Hb-9Mi"/>
+                            <constraint firstItem="RqR-TN-VlN" firstAttribute="leading" secondItem="Sc2-Lt-hfC" secondAttribute="leadingMargin" id="TPp-aE-nm6"/>
+                            <constraint firstItem="OnV-Dq-8HX" firstAttribute="top" secondItem="6Y9-2q-GRj" secondAttribute="bottom" constant="40" id="ULd-3q-ufC"/>
+                            <constraint firstItem="RqR-TN-VlN" firstAttribute="top" secondItem="OnV-Dq-8HX" secondAttribute="bottom" constant="27" id="YwG-Lx-3Lv"/>
+                            <constraint firstItem="RqR-TN-VlN" firstAttribute="trailing" secondItem="Sc2-Lt-hfC" secondAttribute="trailingMargin" id="jSV-cm-Sm4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="q8j-k3-rwf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="SUN-4r-vX6">
+                            <connections>
+                                <action selector="save:" destination="iKY-Di-vyi" id="D6u-FE-yfZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detailTextView" destination="RqR-TN-VlN" id="Nbg-la-uRI"/>
+                        <outlet property="titleField" destination="OnV-Dq-8HX" id="ksE-vj-oqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WuD-oQ-LjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2638" y="317"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wdt-gY-lbb">

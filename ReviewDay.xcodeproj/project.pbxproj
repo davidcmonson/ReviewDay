@@ -20,6 +20,7 @@
 		772F469F1ABB2ACB00980812 /* QuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772F469E1ABB2ACB00980812 /* QuestionController.m */; };
 		772F46A21ABB2D6500980812 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 772F46A11ABB2D6500980812 /* Stack.m */; };
 		772F46A41ABB2D7100980812 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772F46A31ABB2D7100980812 /* CoreData.framework */; };
+		772F46A71ABB3EF100980812 /* QuestionDetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772F46A61ABB3EF100980812 /* QuestionDetailViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		772F46A01ABB2D6500980812 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		772F46A11ABB2D6500980812 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 		772F46A31ABB2D7100980812 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		772F46A51ABB3EF100980812 /* QuestionDetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDetailViewViewController.h; sourceTree = "<group>"; };
+		772F46A61ABB3EF100980812 /* QuestionDetailViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDetailViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				772F46701ABB22E100980812 /* AppDelegate.m */,
 				772F46721ABB22E100980812 /* QuestionListViewController.h */,
 				772F46731ABB22E100980812 /* QuestionListViewController.m */,
+				772F46A51ABB3EF100980812 /* QuestionDetailViewViewController.h */,
+				772F46A61ABB3EF100980812 /* QuestionDetailViewViewController.m */,
 				772F469D1ABB2ACB00980812 /* QuestionController.h */,
 				772F469E1ABB2ACB00980812 /* QuestionController.m */,
 				772F46971ABB2A5800980812 /* Question.h */,
@@ -248,6 +253,7 @@
 			files = (
 				772F46A21ABB2D6500980812 /* Stack.m in Sources */,
 				772F46741ABB22E100980812 /* QuestionListViewController.m in Sources */,
+				772F46A71ABB3EF100980812 /* QuestionDetailViewViewController.m in Sources */,
 				772F469C1ABB2A5900980812 /* User.m in Sources */,
 				772F46711ABB22E100980812 /* AppDelegate.m in Sources */,
 				772F469F1ABB2ACB00980812 /* QuestionController.m in Sources */,
