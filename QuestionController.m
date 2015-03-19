@@ -12,6 +12,15 @@
 
 @implementation QuestionController
 
++ (QuestionController*)sharedInstance {
+    static QuestionController *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [QuestionController new];
+    });
+    return sharedInstance;
+}
+
 - (NSArray *)questions {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Question"];
     
@@ -38,6 +47,18 @@
     
     return users.firstObject;
     
+}
+
+- (NSArray *)questionsWithStatus:(QuestionStatus)status {
+    
+    NSPredicate *roleMatchingPredicate = [NSPredicate predicateWithFormat:@"%K = %@", @"role", [NSNumber numberWithInteger:status]];
+    
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Question"];
+    fetchRequest.predicate = roleMatchingPredicate;
+    
+    return [[Stack sharedInstance].managedObjectContext executeFetchRequest:fetchRequest error:nil];
+                                          
+                                          
 }
 
 - (Question *)createQuestionWithTitle:(NSString *)title details:(NSString *)details {

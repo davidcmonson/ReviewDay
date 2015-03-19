@@ -10,6 +10,17 @@
 #import "Question.h"
 #import "User.h"
 
+typedef NS_ENUM(NSUInteger, QuestionStatus) {
+    StatusActive,
+    StatusAnswered,
+    StatusDeleted,
+};
+
+typedef NS_ENUM(NSUInteger, UserRole) {
+    RoleStudent,
+    RoleMentor,
+};
+
 
 @interface QuestionController : NSObject
 
@@ -23,16 +34,13 @@
 
 - (void)save;
 
-typedef NS_ENUM(NSUInteger, QuestionStatus) {
-    StatusActive,
-    StatusAnswered,
-    StatusDeleted,
-};
+- (NSArray *)questionsWithStatus:(QuestionStatus)status;
 
-typedef NS_ENUM(NSUInteger, UserRole) {
-    RoleStudent,
-    RoleMentor,
-};
++ (QuestionController*)sharedInstance;
+
+
+
+
 
 
 

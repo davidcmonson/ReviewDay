@@ -14,7 +14,6 @@
 		772F46791ABB22E100980812 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772F46781ABB22E100980812 /* Images.xcassets */; };
 		772F467C1ABB22E100980812 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772F467A1ABB22E100980812 /* LaunchScreen.xib */; };
 		772F46881ABB22E100980812 /* ReviewDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 772F46871ABB22E100980812 /* ReviewDayTests.m */; };
-		772F46931ABB274500980812 /* QuestionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 772F46921ABB274500980812 /* QuestionDataSource.m */; };
 		772F46961ABB28B000980812 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 772F46941ABB28B000980812 /* Model.xcdatamodeld */; };
 		772F46991ABB2A5800980812 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 772F46981ABB2A5800980812 /* Question.m */; };
 		772F469C1ABB2A5900980812 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 772F469B1ABB2A5900980812 /* User.m */; };
@@ -47,8 +46,6 @@
 		772F46811ABB22E100980812 /* ReviewDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReviewDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		772F46861ABB22E100980812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772F46871ABB22E100980812 /* ReviewDayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReviewDayTests.m; sourceTree = "<group>"; };
-		772F46911ABB274500980812 /* QuestionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDataSource.h; sourceTree = "<group>"; };
-		772F46921ABB274500980812 /* QuestionDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDataSource.m; sourceTree = "<group>"; };
 		772F46951ABB28B000980812 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		772F46971ABB2A5800980812 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
 		772F46981ABB2A5800980812 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
@@ -107,8 +104,6 @@
 				772F46701ABB22E100980812 /* AppDelegate.m */,
 				772F46721ABB22E100980812 /* QuestionListViewController.h */,
 				772F46731ABB22E100980812 /* QuestionListViewController.m */,
-				772F46911ABB274500980812 /* QuestionDataSource.h */,
-				772F46921ABB274500980812 /* QuestionDataSource.m */,
 				772F469D1ABB2ACB00980812 /* QuestionController.h */,
 				772F469E1ABB2ACB00980812 /* QuestionController.m */,
 				772F46971ABB2A5800980812 /* Question.h */,
@@ -258,7 +253,6 @@
 				772F469F1ABB2ACB00980812 /* QuestionController.m in Sources */,
 				772F46961ABB28B000980812 /* Model.xcdatamodeld in Sources */,
 				772F46991ABB2A5800980812 /* Question.m in Sources */,
-				772F46931ABB274500980812 /* QuestionDataSource.m in Sources */,
 				772F466E1ABB22E100980812 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
