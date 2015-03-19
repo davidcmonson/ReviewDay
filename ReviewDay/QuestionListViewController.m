@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Dev Mountain. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "QuestionListViewController.h"
 
-@interface ViewController ()
+@interface QuestionListViewController ()
 
 @end
 
-@implementation ViewController
+@implementation QuestionListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
